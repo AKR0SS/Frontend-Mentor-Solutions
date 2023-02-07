@@ -1,6 +1,6 @@
 * {
     --white: #f1f1e3;
-    --off_white: #cbc5b6;
+    --off_white: #d8d0bd;
     --main-bg: #181A1B;
     --blue: #3F4E4F;
     --brown: #A27B5C;
@@ -16,7 +16,7 @@ body {
 
 hr {
     border: none;
-    border-top: 1px solid var(--white);
+    border-top: 1px solid var(--off_white);
 }
 
 p {
@@ -55,6 +55,10 @@ p {
 
 .col:hover .background-overlay {
     opacity: .9;
+}
+
+.shield {
+    border: 1px solid var(--brown);
 }
 
 .links {
