@@ -1,0 +1,74 @@
+* {
+    --white: #f1f1e3;
+    --off_white: #cbc5b6;
+    --main-bg: #181A1B;
+    --blue: #3F4E4F;
+    --brown: #A27B5C;
+    --card-height: 80vh;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--white);
+}
+
+p {
+    color: var(--off_white);
+}
+
+.col {
+    background-color: var(--main-bg);
+    height: var(--card-height);
+    min-width: 275px;
+}
+
+.card-img-overlay {
+    inset: 0;
+    opacity: 0;
+    transition: .45s ease;
+}
+
+/* FIX OVERLAY NOT 100% FILLING DIV */
+.background-overlay {
+    inset: 0;
+    opacity: 0;
+    transition: .28s ease;
+    background: var(--main-bg);
+}
+
+.nft-preview-card-component {
+    background-image: url('../images/nft-preview-card-component.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.col:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.col:hover .background-overlay {
+    opacity: .9;
+}
+
+.links {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.link-repo {
+    width: 14px;
+    height: auto;
+}
+
+.link-live {
+    width: 24px;
+    height: auto;
+}
