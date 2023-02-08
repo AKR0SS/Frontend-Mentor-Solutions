@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body onload="generateAdvice()">
+  <main>
+    <div class="card">
+      <div class="content">
+        <h2>ADVICE <span id="adviceId">#000</span></h2>
+        <p class="quote" id="quote">
+          "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+        </p>
+        <div class="divider"></div>
+        <div class="dice-container" onclick="generateAdvice()">
+          <object class="dice" data="./assets/images/icon-dice.svg" type="image/svg+xml"></object>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Akross</a>.
+    </div>
+  </footer>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

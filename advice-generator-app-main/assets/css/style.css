@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --graish_blue: hsl(217, 19%, 38%);
+    --dark_grayish_blue: hsl(217, 19%, 24%);
+    --dark_blue: hsl(218, 23%, 16%);
+    --primary: hsl(193, 38%, 86%);
+    --secondary: hsl(150, 100%, 66%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--dark_blue);
+    color: var(--primary);
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: .8rem;
+    color: var(--secondary);
+    letter-spacing: .3rem;
+    width: inherit;
+    text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+    .card {
+        max-width: 390px;
+    }
+
+    .content {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        padding-inline: 2.8rem;
+    }
+
+    .divider {
+        background-image: url("../images/pattern-divider-mobile.svg");
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .content {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        padding-inline: 53px;
+    }
+
+    .divider {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background: url("../images/pattern-divider-desktop.svg") no-repeat;
+    }
+}
+
+.card {
+    position: absolute;
+    width: 550px;
+    height: auto;
+    background-color: var(--dark_grayish_blue);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+
+#quote {
+    text-align: center;
+}
+
+.divider {
+    height: 1rem;
+}
+
+.dice-container {
+    position: absolute;
+    background-color: var(--secondary);
+    width: 60px;
+    height: 60px;
+    bottom: -9%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    transition: .24s ease;
+}
+
+.dice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none
+}
+
+.dice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px 0 var(--secondary);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
