@@ -25,7 +25,7 @@ main {
     align-items: center;
 }
 
-h2 {
+h1 {
     font-size: .8rem;
     color: var(--secondary);
     letter-spacing: .3rem;
