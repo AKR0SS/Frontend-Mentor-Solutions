@@ -62,6 +62,8 @@ hr {
 }
 
 .info {
+    display: flex;
+    padding: 3rem;
     background-color: white;
     top: 250px;
     width: 1300px;
@@ -72,6 +74,34 @@ hr {
     z-index: 1;
     height: 65%;
     width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: .7rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    .search {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .info {
+        display: block;
+        width: 90%;
+        height: auto;
+        padding: 1.2rem;
+        text-align: center;
+        top: 155px;
+    }
 }
 
 /* provided */
