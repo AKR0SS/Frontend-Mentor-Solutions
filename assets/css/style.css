@@ -27,6 +27,7 @@ p {
     background-color: var(--main-bg);
     height: var(--card-height);
     min-width: 275px;
+    border: 1px solid black;
 }
 
 .card-img-overlay {
