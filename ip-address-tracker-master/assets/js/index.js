@@ -1,6 +1,6 @@
 const API_KEY = 'at_tdHgLbDeMUCYV4JEHY8nvqADQCtZC'; // this is pain
 const BASE_URL = 'https://geo.ipify.org/api/v2/country,city';
-const CENTER = [51.505, -0.09];
+const CENTER = [37.38605, -122.08385];
 
 async function geoAPI(address) {
   let url = `${BASE_URL}?apiKey=${API_KEY}`;
